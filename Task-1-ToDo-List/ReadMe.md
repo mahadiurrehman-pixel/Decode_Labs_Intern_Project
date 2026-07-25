@@ -1,22 +1,32 @@
 # To-Do List Application ✅
 
-A console-based To-Do List Management System built using Python as part of the DecodeLabs Internship project.
+A console-based **To-Do List Management System** built using Python as part of the **DecodeLabs Internship Project**.
+
+This application allows users to manage their daily tasks through a simple command-line interface. Users can add, view, edit, delete, search, and clear tasks efficiently.
+
+---
 
 ## 📌 Features
 
-- Add new tasks
-- View all tasks
-- Edit existing tasks
-- Delete tasks
-- Search tasks
-- Clear all tasks
-- Input validation for user entries
+- ✅ Add new tasks
+- ✅ View all tasks
+- ✅ Edit existing tasks
+- ✅ Delete tasks
+- ✅ Search tasks using keywords
+- ✅ Clear all tasks
+- ✅ Input validation and error handling
+
+---
 
 ## 🛠️ Technologies Used
 
-- Python 3
+- **Python 3**
+
+---
 
 ## 🧠 Concepts Implemented
+
+This project demonstrates the following Python concepts:
 
 - Functions
 - Lists
@@ -27,27 +37,58 @@ A console-based To-Do List Management System built using Python as part of the D
 - List Comprehension
 - User Input Handling
 
+---
+
+## 📂 Project Structure
+
+```
+Task-1-ToDo-List/
+│
+├── main.py
+│
+└── README.md
+```
+
+---
+
 ## ▶️ How to Run
 
-Clone the repository:
+### 1. Clone the Repository
+
 ```bash
 git clone <repository-link>
-Navigate to the project folder:
+```
+
+### 2. Navigate to Project Folder
+
+```bash
 cd Task-1-ToDo-List
-Run the Python file:
+```
+
+### 3. Run the Application
+
+```bash
 python main.py
+```
 
-##📷 Project Overview
+---
 
-This project is a simple command-line task management application that allows users to manage their daily tasks efficiently.
+## 📷 Project Overview
 
-##👨‍💻 Author
+The To-Do List Application is a beginner-friendly Python project designed to practice programming fundamentals and problem-solving skills.
 
-Mahadi Ur Rehman
+It provides a simple way for users to organize and manage their tasks directly from the terminal.
 
-##🏢 Internship
+---
 
-DecodeLabs Internship Project
+## 👨‍💻 Author
 
+**Mahadi Ur Rehman**
 
-Bhai ye folder-level README ke liye perfect hai. Isme project ka purpose, features aur run karne ka tareeqa c
+---
+
+## 🏢 Internship
+
+**DecodeLabs Internship Project**
+
+---
