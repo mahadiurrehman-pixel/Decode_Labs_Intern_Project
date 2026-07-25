@@ -1,6 +1,28 @@
+import json
+import os
+
+DATA_FILE = 'tasks.json'
 tasks = []
 
+def load_tasks():
+    global tasks
+    if os.path.exists(DATA_FILE):
+        try:
+            with open(DATA_FILE, 'r') as file:
+                tasks = json.load(file)
+        except (json.JSONDecodeError, IOError):
+            print('Warning: Could Not Load Tasks File. Starting Fresh.')
+            tasks = []
+
+def save_tasks():
+    try:
+        with open(DATA_FILE, 'w') as file:
+            json.dump(tasks, file, indent=4)
+    except IOError:
+        print('Error: Could Not Save Tasks To File!')
+
 def main():
+    load_tasks()
     while True:
         print('\n===== TO-DO LIST =====')
         print("1.Add_Task \n2.View_Task \n3.Delete_Task \n4.Search_Task \n5.Edit_Task \n6.Clear_Tasks \n0.Exit")
@@ -27,6 +49,7 @@ def main():
             break
         else:
             print('Invalid Choice! Please Try Again.')
+
 def add_task():
     while True:
         task = input('Enter The Task You Want To Add (or 0 to cancel): ')
@@ -37,8 +60,10 @@ def add_task():
             print('Enter A Valid Task!')
         else:
             tasks.append(task)
+            save_tasks()
             print(f'Your Task "{task}" Is Added Successfully!')
             return
+
 def view_task():
     if not tasks:
         print('No Tasks Found!')
@@ -46,6 +71,7 @@ def view_task():
     print('\n===== YOUR TASKS =====')
     for number, task in enumerate(tasks, start=1):
         print(f'{number}. {task}')
+
 def delete_task():
     if not tasks:
         print('No Tasks To Delete!')
@@ -61,9 +87,11 @@ def delete_task():
             return
         no = no - 1
         removed = tasks.pop(no)
+        save_tasks()
         print(f'"{removed}" Is Removed From The Tasks!')
     except ValueError:
         print('Please Enter A Valid Number!')
+
 def search_task():
     if not tasks:
         print('No Tasks To Search!')
@@ -80,6 +108,7 @@ def search_task():
         print(f'\n===== SEARCH RESULTS FOR "{keyword}" =====')
         for number, task in results:
             print(f'{number}. {task}')
+
 def edit_task():
     if not tasks:
         print('No Tasks To Edit!')
@@ -99,9 +128,11 @@ def edit_task():
             print('Enter A Valid Task!')
             return
         tasks[no - 1] = new_task
+        save_tasks()
         print(f'"{old_task}" Is Updated To "{new_task}" Successfully!')
     except ValueError:
         print('Please Enter A Valid Number!')
+
 def clear_tasks():
     if not tasks:
         print('No Tasks To Clear!')
@@ -109,7 +140,10 @@ def clear_tasks():
     confirm = input(f'Are You Sure You Want To Delete All {len(tasks)} Tasks? (yes/no): ')
     if confirm.lower() == 'yes':
         tasks.clear()
+        save_tasks()
         print('All Tasks Are Cleared!')
     else:
         print('Cancelled.')
-main()
+
+if __name__ == "__main__":
+    main()
