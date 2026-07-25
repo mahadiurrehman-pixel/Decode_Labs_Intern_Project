@@ -2,7 +2,7 @@
 
 A console-based **To-Do List Management System** built using Python as part of the **DecodeLabs Internship Project**.
 
-This application allows users to manage their daily tasks through a simple command-line interface. Users can add, view, edit, delete, search, and clear tasks efficiently.
+This application allows users to manage their daily tasks through a command-line interface with permanent data storage using JSON.
 
 ---
 
@@ -14,6 +14,8 @@ This application allows users to manage their daily tasks through a simple comma
 - ✅ Delete tasks
 - ✅ Search tasks using keywords
 - ✅ Clear all tasks
+- ✅ Save tasks permanently using JSON file
+- ✅ Load tasks automatically when the application starts
 - ✅ Input validation and error handling
 
 ---
@@ -21,6 +23,7 @@ This application allows users to manage their daily tasks through a simple comma
 ## 🛠️ Technologies Used
 
 - **Python 3**
+- **JSON (Data Storage)**
 
 ---
 
@@ -33,9 +36,11 @@ This project demonstrates the following Python concepts:
 - Loops
 - Conditional Statements
 - Exception Handling
+- File Handling
+- JSON Data Handling
 - List Methods
 - List Comprehension
-- User Input Handling
+- User Input Validation
 
 ---
 
@@ -45,7 +50,7 @@ This project demonstrates the following Python concepts:
 Task-1-ToDo-List/
 │
 ├── main.py
-│
+├── tasks.json
 └── README.md
 ```
 
@@ -73,11 +78,20 @@ python main.py
 
 ---
 
+## 💾 Data Storage
+
+The application uses a JSON file (`tasks.json`) to store tasks permanently.
+
+- Tasks are saved automatically after adding, editing, deleting, or clearing tasks.
+- Previously saved tasks are loaded when the program starts.
+
+---
+
 ## 📷 Project Overview
 
-The To-Do List Application is a beginner-friendly Python project designed to practice programming fundamentals and problem-solving skills.
+The To-Do List Application is a Python-based task management system designed to practice programming fundamentals and real-world application development.
 
-It provides a simple way for users to organize and manage their tasks directly from the terminal.
+It provides users with an easy way to organize and manage their daily tasks directly from the terminal.
 
 ---
 
@@ -90,5 +104,3 @@ It provides a simple way for users to organize and manage their tasks directly f
 ## 🏢 Internship
 
 **DecodeLabs Internship Project**
-
----
