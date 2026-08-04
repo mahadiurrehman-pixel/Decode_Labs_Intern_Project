@@ -1,16 +1,18 @@
-# DecodeLabs Internship Projects 🚀
+# 🚀 DecodeLabs Internship Projects
 
-This repository contains all the projects and tasks completed during my DecodeLabs Internship.
+This repository contains all the projects and tasks completed during my **DecodeLabs Internship**.
 
-The purpose of this repository is to document my learning journey, practical implementations, and hands-on experience with Python programming, problem-solving, and software development.
+The purpose of this repository is to document my learning journey, practical implementations, and hands-on experience with **Python programming, problem-solving, software development, and building real-world command-line applications**.
 
-## 📂 Projects
+---
 
-### Task 1: To-Do List Application
+# 📂 Projects
 
-A console-based To-Do List Management System built using Python.
+## ✅ Task 1: To-Do List Application
 
-#### Features:
+A console-based **To-Do List Management System** built using Python.
+
+### Features:
 - ✅ Add new tasks
 - ✅ View all tasks
 - ✅ Edit existing tasks
@@ -19,7 +21,7 @@ A console-based To-Do List Management System built using Python.
 - ✅ Clear all tasks
 - ✅ Input validation and error handling
 
-#### Concepts Practiced:
+### Concepts Practiced:
 - Functions
 - Lists
 - Loops
@@ -30,19 +32,19 @@ A console-based To-Do List Management System built using Python.
 
 ---
 
-### Task 2: Expense Tracker
+# ✅ Task 2: Expense Tracker
 
-A console-based Expense Tracker that allows users to record expenses, categorize them, and generate a spending summary.
+A console-based **Expense Tracker** that allows users to record expenses, categorize them, and generate spending summaries.
 
-#### Features:
+### Features:
 - ✅ Add multiple expenses
-- ✅ Categorize each expense
+- ✅ Categorize expenses
 - ✅ Automatic total expense calculation
 - ✅ Summary receipt generation
 - ✅ Prevent negative expense entries
 - ✅ Handle invalid user input gracefully
 
-#### Concepts Practiced:
+### Concepts Practiced:
 - Variables
 - Lists and Tuples
 - Loops
@@ -53,34 +55,97 @@ A console-based Expense Tracker that allows users to record expenses, categorize
 
 ---
 
-## 🛠️ Technologies Used
+# ✅ Task 3: Enterprise Random Password Generator
 
-- Python 3
+A secure Python-based password generator that creates strong random passwords using Python's built-in `secrets` module.
+
+### Features:
+- 🔐 Cryptographically secure password generation
+- 🔢 Custom password length support
+- 🔤 Includes:
+  - Uppercase letters
+  - Lowercase letters
+  - Numbers
+  - Special characters
+- 📊 Password entropy calculation
+- ⚡ Fast and lightweight command-line tool
+
+### Concepts Practiced:
+- Python Standard Libraries
+- Functions
+- String Manipulation
+- Random Secure Generation
+- Mathematical Calculations
+- User Input Validation
+
+### Libraries Used:
+- `math`
+- `secrets`
+- `string`
 
 ---
 
-## 📌 About This Repository
+# ✅ Task 4: General Knowledge Quiz
 
-Each project in this repository represents a step in my journey of improving Python programming skills by building practical command-line applications.
+A simple interactive **command-line General Knowledge Quiz** built with Python.
+
+The program asks questions, evaluates user answers, provides instant feedback, and calculates the final score.
+
+### Features:
+- 🧠 Interactive quiz system
+- ✅ Instant answer validation
+- 📊 Final score calculation
+- 🔤 Case-insensitive answer checking
+- 🚀 Beginner-friendly CLI application
+
+### Concepts Practiced:
+- Functions
+- Conditional Statements
+- User Input Handling
+- String Methods
+- Variables
+- Score Tracking
+- Program Flow Control
+
+---
+
+# 🛠️ Technologies Used
+
+- Python 3
+- Python Standard Library
+
+---
+
+# 📌 About This Repository
+
+Each project in this repository represents a step in my journey of improving Python programming skills by creating practical applications.
 
 Throughout this internship, I am focusing on:
+
 - Writing clean and readable code
-- Strengthening problem-solving skills
-- Practicing core Python concepts
-- Building real-world console applications
+- Improving problem-solving abilities
+- Understanding Python fundamentals
+- Building real-world command-line applications
+- Learning software development practices
 
 More projects and improvements will be added as I progress through the internship.
 
 ---
 
-## 👨‍💻 Developer
+# 👨‍💻 Developer
 
 **Mahadi Ur Rehman**
 
 BS Business & Information Technology (BBIT)
 
+Python Developer | AI & Machine Learning Enthusiast
+
 ---
 
-## 🏢 Internship
+# 🏢 Internship
 
-**DecodeLabs**
+**DecodeLabs Internship**
+
+---
+
+⭐ If you find these projects useful, feel free to explore the repository and give it a star.
